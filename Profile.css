@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Century Gothic, sans-serif;
+    font-size: 16px;
+}
+
+
+
+main.main-profile-wrapper {
+    background: white;
+}
+
+.profile-mainpage-wrapper {
+    width: 100%;
+}
+
+.profile-page-border {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.profile-timeline-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-background-wrapper {
+    margin-left: 105px;
+    min-width: 890px;
+    position: relative;
+}
+
+.profile-background-container {
+    height: 300px;
+}
+
+.profie-page-upper {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-background-card {
+    position: relative;
+    height: 300px;
+}
+.profile-background-card {
+    background-color: rgb(221 159 135);
+}
+
+.profile-background-change-wrapper {
+    left: 24px;
+}
+.profile-background-change-wrapper {
+    font-style: normal;
+    position: absolute;
+    top: 21px;
+    display: flex;
+}
+.profile-background-change-wrapper {
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+p.bgcard-text {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
+i.fa-sharp.fa-solid.fa-camera {
+    width: 26px;
+    height: 11px;
+    opacity: .8;
+    margin-top: -2px;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture-wrapper {
+    position: relative;
+    min-height: 37px;
+    display: flex;
+    flex-direction: row;
+}
+.profile-picture-wrapper {
+    height: 250px;
+    margin-top: -250px;
+    padding-right: 24px;
+    padding-left: 30px;
+    padding-top: 0;
+}
+
+.profile-picture-container {
+    margin-left: 24px;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    display: flex;
+    min-width: 190px;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-picture-andname-container {
+    display: flex;
+}
+
+.profile-page-image-wrapper {
+    margin-right: 24px;
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+    min-height: 110px;
+    position: relative;
+}
+
+.profile-page-image-container {
+    aspect-ratio: 1;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+/* UPLOAD PIC STARTS HERE */
+
+
+#photo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+.profile-pic-div{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#file{
+    display: none;
+}
+
+#uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.profile-user-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 500px;
+    text-align: left;
+}
+
+.profilecard-member-name {
+    min-width: 95px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+
+.member-name-container {
+    max-width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    position: relative;
+    vertical-align: middle;
+}
+
+h1.member-name-text {
+    color: white;
+    font-style: normal;
+    max-width: 470px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.line-break {
+    height: 1px;
+    width: 100%;
+    opacity: 0;
+    bottom: 0;
+}
+
+.profilecard-followersfollowing {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    transition: opacity .2s ease-in;
+    justify-content: flex-end;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+}
+
+.profilecard-follower {
+    padding-right: 7px;
+}
+
+button.followers-btn {
+    flex-direction: row;
+    display: flex;
+    color: white;
+    font: inherit;
+    letter-spacing: inherit;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0);
+    border: inherit;
+    cursor: pointer;
+}
+
+span {
+    padding-right: 5px;
+    display: flex;
+}
+
+.fllwrs {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+button.following-btn {
+    padding-left: 7px;
+    display: flex;
+    flex-direction: row;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0);
+    border: inherit;
+    cursor: pointer;
+    color: white;
+}
+
+span {
+    padding-right: 5px;
+    display: flex;
+}
+
+.fllwng {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
