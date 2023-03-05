@@ -1,3 +1,24 @@
+<?php 
+session_start();
+$_SESSION;
+	include("connection.php");
+	include("functions.php");
+    
+    if(isset($_SESSION['user_id']))
+    {
+        if($_SERVER['REQUEST_METHOD'] == "POST")
+        {
+                //Wala pang codes
+        }
+    }
+    else
+    {
+    // user is not logged in, redirect to login page
+    header("Location: login.php");
+    die();
+    }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +49,7 @@
 
         <nav class="sidenav"> <!--Left NavBar START-->
             <ul class="navbar-ul">
-                <li class="nav-item"><a href="#" class="nav-link">
+                <li class="nav-item"><a href="index.php" class="nav-link">
                         <i class="fas fa-home"></i>
                         <span class="link-text">Home</span>
                     </a></li>

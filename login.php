@@ -58,19 +58,36 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
             $user_data = mysqli_fetch_assoc($result);
             if($user_data['password'] === $password)
             {
-                $_SESSION['user_id'] = $userdata['user_id'];
+                $_SESSION['user_id'] = $user_data['user_id'];
                 header("Location: index.php");
-                echo "<script>alert('Login Successfully as ".$user_data['user_name']."');</script>";
                 die;
             }
-            else{
+            else
+            {
                 echo "<script>alert('Wrong password or username');</script>";
+                header("Location: login.php");
                 die;
-            }
+            }   
         }
-    } 
+        else
+        {
+             echo "<script>alert('User does not exist');</script>";
+            die;
+        }
+} 
 }
-else
+else{
+
+}
+?>
+
+<?php
+if (isset($_GET['status']) && $_GET['status'] == 'success') {
+    echo '<script>alert("User has been successfully signed up!");</script>';
+}
+else {
+    exit;
+}
 ?>
 </body>
 </html>

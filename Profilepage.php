@@ -1,3 +1,22 @@
+<?php 
+session_start();
+$_SESSION;
+	include("connection.php");
+	include("functions.php");
+    
+    if(isset($_SESSION['user_id']))
+    {
+           //wala pang codes 
+    }
+            
+    else
+    {
+    // user is not logged in, redirect to login page
+    header("Location: login.php");
+    die();
+    }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -140,9 +159,6 @@
                         </div>
                     </section>
                 </div>
-
-
-
             </div>
     </div>
     </main>
